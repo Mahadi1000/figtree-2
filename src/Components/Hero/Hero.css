@@ -1,0 +1,13 @@
+.hero {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0.616)), url("../../assets/hero-img2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  width: 100%; 
+}
+
+
+
+
