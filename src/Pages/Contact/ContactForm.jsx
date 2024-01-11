@@ -21,7 +21,7 @@ const ContactForm = () => {
   // Your EmailJS service ID, template ID, and Public Key
   const serviceId = "service_jtr1sh4";
   const templateId = "template_bkxjdzv";
-  const publicKey = "BbLtIa9QmuRWL1gFA";
+  const publicKey = "ejrield3HzYFbYOp2";
 
   const handleSubmit = (e) => {
     e.preventDefault();
