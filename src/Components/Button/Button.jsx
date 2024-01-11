@@ -84,7 +84,7 @@ const Button = ({ className }) => {
                 required
                 type="text"
                 name="fullName"
-                className="rounded-md"
+                className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                 value={fullName}
                 onChange={(e) => setFullName(e.target.value)}
                 placeholder="Enter Full Name"
@@ -129,12 +129,25 @@ const Button = ({ className }) => {
                   checked={gdprAgreement}
                   onChange={(e) => setGdprAgreement(e.target.checked)}
                 />
-                I agree to the terms and conditions
+                I agree to the{" "}
+                <a
+                  className="cursor-pointer text-blue-600"
+                  href="https://www.figtreeproperty.com/terms-and-conditions/"
+                >
+                  {" "}
+                  Terms and Conditions
+                </a>
               </label>
             </div>
             <p className="my-4">
-              Please visit the privacy policy to understand how FigTree handles
-              your personal data.
+              Please visit the{" "}
+              <a
+                className="cursor-pointer text-blue-600"
+                href="https://www.figtreeproperty.com/privacy/"
+              >
+                privacy policy
+              </a>{" "}
+              to understand how FigTree handles your personal data.
             </p>
             <div className="flex items-center justify-center">
               <button

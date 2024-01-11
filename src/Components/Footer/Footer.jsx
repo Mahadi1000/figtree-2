@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo2.png";
 import app from "../../assets/app.png";
 import {
   FaApple,
@@ -34,9 +34,9 @@ const Footer = () => {
           </div>
         </div>
       </section>
-      <footer className="bg-[#1a1a1a] h-full flex md:flex-col items-center justify-around  text-white ">
+      <footer className="bg-[#1a1a1a] h-full flex md:flex-col items-center justify-around text-white ">
         <div className="">
-          <div className="flex flex-col md:flex-row gap-10 items-center">
+          <div className="flex flex-col lg:flex-row gap-10 items-center">
             {/* 1st col */}
             <div className="flex flex-col">
               <div>

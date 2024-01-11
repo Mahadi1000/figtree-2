@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import "./about.css";
 import bg from "../../assets/aboutBg.jpg";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo2.png";
 import img1 from "../../assets/about-img1.png"
 import img2 from "../../assets/about-img2.png"
 import img3 from "../../assets/about-img3.png"

@@ -1,6 +1,6 @@
 import "./contact.css";
 import bg from "../../assets/aboutBg.jpg";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo2.png";
 import { motion } from "framer-motion";
 import ContactForm from "./ContactForm";
 import { Helmet } from "react-helmet-async";

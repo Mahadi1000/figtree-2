@@ -53,9 +53,9 @@ const ContactForm = () => {
       <form
         onSubmit={handleSubmit}
         ref={form}
-        className="w-full flex  lg:flex-wrap  bg-white"
+        className="w-full flex flex-wrap bg-white"
       >
-        <div className="lg:w-1/2 w-full pr-2 ">
+        <div className="lg:w-1/2 w-full pr-2 mb-4 lg:mb-0">
           <label
             className="block mb-2 text-sm font-semibold text-gray-600"
             htmlFor="firstName"
@@ -68,7 +68,7 @@ const ContactForm = () => {
             name="firstName"
             value={firstName}
             onChange={(e) => setfirstName(e.target.value)}
-            className="w-full px-4 py-2 mb-4 border rounded-md focus:outline-none focus:border-blue-500"
+            className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
             required
           />
         </div>
@@ -86,43 +86,48 @@ const ContactForm = () => {
             name="lastName"
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
-            className="w-full px-4 py-2 mb-4 border rounded-md focus:outline-none focus:border-blue-500"
+            className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
             required
           />
         </div>
 
-        <label
-          className="block mb-2 text-sm font-semibold text-gray-600"
-          htmlFor="email"
-        >
-          Email:
-        </label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className="w-full px-4 py-2 mb-4 border rounded-md focus:outline-none focus:border-blue-500"
-          required
-        />
+        <div className="w-full mb-4">
+          <label
+            className="block mb-2 text-sm font-semibold text-gray-600"
+            htmlFor="email"
+          >
+            Email:
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+            required
+          />
+        </div>
 
-        <label
-          className="block mb-2 text-sm font-semibold text-gray-600"
-          htmlFor="message"
-        >
-          Message:
-        </label>
-        <textarea
-          id="message"
-          name="message"
-          rows="4"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          className="w-full px-4 py-2 mb-4 border rounded-md resize-none focus:outline-none focus:border-blue-500"
-          required
-        ></textarea>
-        <div className="mb-4 ">
+        <div className="w-full mb-4">
+          <label
+            className="block mb-2 text-sm font-semibold text-gray-600"
+            htmlFor="message"
+          >
+            Message:
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            className="w-full px-4 py-2 border rounded-md resize-none focus:outline-none focus:border-blue-500"
+            required
+          ></textarea>
+        </div>
+
+        <div className="w-full mb-4">
           <label
             className="block text-gray-700 text-sm font-bold mb-2"
             htmlFor="gdprAgreement"
@@ -140,16 +145,16 @@ const ContactForm = () => {
           <span className="ml-2 text-gray-700">
             I consent to having this website store my submitted information
           </span>
+        </div>
 
-          <div className="flex w-full items-center justify-between">
-            <button
-              value="send"
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold mx-auto py-2 px-10 mt-4 rounded focus:outline-none focus:shadow-outline"
-              type="submit"
-            >
-              Submit
-            </button>
-          </div>
+        <div className="w-full">
+          <button
+            value="send"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold mx-auto py-2 px-10 rounded focus:outline-none focus:shadow-outline"
+            type="submit"
+          >
+            Submit
+          </button>
         </div>
       </form>
     </div>

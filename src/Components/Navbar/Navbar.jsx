@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo2.png";
+import logo1 from "../../assets/logo.png";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 import { FaWhatsapp } from "react-icons/fa";
@@ -61,7 +62,10 @@ const Navbar = () => {
           >
             <div>
               <div className="flex justify-center items-center mt-5">
-                <img src={logo} alt="logo of figTree" className="w-16" />
+                <Link to={'/'}>
+                  {" "}
+                  <img src={logo1} alt="logo of figTree" className="w-20" />
+                </Link>
               </div>
               <div className="list-none ">
                 <ul>
@@ -113,9 +117,9 @@ const Navbar = () => {
           </div>
         </ul>
       </div>
-      <div className="w-[75%] items-center justify-end">
+      <div className="w-full items-center justify-end">
         <div className="flex gap-2 justify-center items-center">
-          <div className="flex gap-2">
+          <div className="flex items-center gap-2">
             <button
               onClick={handleWhatsApp}
               className="flex btn-sm text-sm md:btn-md justify-center btn btn-success border-none text-white items-center"
@@ -125,9 +129,7 @@ const Navbar = () => {
             </button>
 
             <div className="mr-5">
-              <Button
-                className="border-none text-sm hover:bg-transparent hover:text-white uppercase bg-white font-medium rounded-md px-3 py-3"
-              ></Button>
+              <Button className="border-none text-xs md:text-sm hover:bg-transparent hover:text-white uppercase bg-white font-medium rounded-md px-3 py-3"></Button>
             </div>
           </div>{" "}
         </div>

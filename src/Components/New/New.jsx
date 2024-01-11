@@ -75,7 +75,7 @@ const New = () => {
               Click to read our top tips and tricks for property <br />{" "}
               management, home decoration and more.
             </p>
-            <Link to={"/blog"}>
+            <Link to={"https://www.figtreeproperty.com/blog/"}>
               {" "}
               <button className="uppercase mt-5 px-10 py-4 text-white  bg-[#071C35]">
                 Read more

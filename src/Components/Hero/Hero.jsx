@@ -5,7 +5,7 @@ import Form from "../Form/Form";
 const Hero = () => {
   return (
     <>
-      <section className="flex mb-16 justify-center items-center">
+      <section className="flex w-full mb-16 justify-center items-center">
         <div className="hero">
           <div className="container text-center">
             <motion.h1
